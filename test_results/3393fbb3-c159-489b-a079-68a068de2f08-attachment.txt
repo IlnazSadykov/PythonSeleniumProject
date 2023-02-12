@@ -1,0 +1,22 @@
+Enter system
+Start test 1
+input user name
+input password
+Click login button
+Good value word
+Current urlhttps://www.saucedemo.com/inventory.html
+Click select product 1
+Click cart
+Click checkout_button
+Current urlhttps://www.saucedemo.com/checkout-step-one.html
+input first name
+input last name
+input postal_code
+Click continue button
+Click finish button
+Current urlhttps://www.saucedemo.com/checkout-complete.html
+Good value URL
+Screenshotscreenshot2023.01.23.17.18.02.png
+Finish test 1
+Exit system
+
