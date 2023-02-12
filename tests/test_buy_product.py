@@ -47,48 +47,48 @@ def test_select_product_1(set_group):
     time.sleep(2)
     driver_g.quit()
 
-#
-# @pytest.mark.run(order=1)
-# def test_select_product_2():
-#     options = webdriver.ChromeOptions()
-#     options.add_experimental_option('detach', True)
-#     g = Service('D:/PycharmProjects/chromedriver/chromedriver.exe')
-#     driver_g = webdriver.Chrome(options=options, service=g)
-#
-#     print('Start test 2')
-#
-#     login = Login_page(driver_g)
-#     login.authorization()
-#
-#     mp = Main_page(driver_g)
-#     mp.select_product_2()
-#
-#     cp = Cart_page(driver_g)
-#     cp.click_checkout_button()
-#
-#     print('Finish test 2')
-#     time.sleep(2)
-#     driver_g.quit()
-#
-#
-# # @pytest.mark.run(order=2)
-# def test_select_product_3():
-#     options = webdriver.ChromeOptions()
-#     options.add_experimental_option('detach', True)
-#     g = Service('D:/PycharmProjects/chromedriver/chromedriver.exe')
-#     driver_g = webdriver.Chrome(options=options, service=g)
-#
-#     print('Start test 3')
-#
-#     login = Login_page(driver_g)
-#     login.authorization()
-#
-#     mp = Main_page(driver_g)
-#     mp.select_product_3()
-#
-#     cp = Cart_page(driver_g)
-#     cp.click_checkout_button()
-#
-#     print('Finish test 3')
-#     time.sleep(2)
-#     driver_g.quit()
+
+@pytest.mark.run(order=1)
+def test_select_product_2():
+    options = webdriver.ChromeOptions()
+    options.add_experimental_option('detach', True)
+    g = Service('D:/PycharmProjects/chromedriver/chromedriver.exe')
+    driver_g = webdriver.Chrome(options=options, service=g)
+
+    print('Start test 2')
+
+    login = Login_page(driver_g)
+    login.authorization()
+
+    mp = Main_page(driver_g)
+    mp.select_product_2()
+
+    cp = Cart_page(driver_g)
+    cp.click_checkout_button()
+
+    print('Finish test 2')
+    time.sleep(2)
+    driver_g.quit()
+
+
+# @pytest.mark.run(order=2)
+def test_select_product_3():
+    options = webdriver.ChromeOptions()
+    options.add_experimental_option('detach', True)
+    g = Service('D:/PycharmProjects/chromedriver/chromedriver.exe')
+    driver_g = webdriver.Chrome(options=options, service=g)
+
+    print('Start test 3')
+
+    login = Login_page(driver_g)
+    login.authorization()
+
+    mp = Main_page(driver_g)
+    mp.select_product_3()
+
+    cp = Cart_page(driver_g)
+    cp.click_checkout_button()
+
+    print('Finish test 3')
+    time.sleep(2)
+    driver_g.quit()
